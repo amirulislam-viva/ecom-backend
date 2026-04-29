@@ -33,3 +33,8 @@ app.include_router(site_settings.router, prefix="/api/site-settings", tags=["Sit
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the E-commerce Admin API"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
+

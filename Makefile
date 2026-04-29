@@ -7,7 +7,7 @@ setup:
 	@echo "Setting up backend..."
 	uv sync
 	uv run alembic upgrade head
-	uv run python seed.py
+	uv run python furnish.py
 	@echo "Setup complete."
 
 up:
